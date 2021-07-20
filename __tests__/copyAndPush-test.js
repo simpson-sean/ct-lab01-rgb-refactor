@@ -13,15 +13,15 @@ describe('copyAndPush', () => {
 
     });
 
-// describe('copyAndPush', () => {
-//     it('makes copy of array and adds 4 to the end', () => {
-//         const numArray = [1, 2, 3];
-//         const numArrayCopy = numArray;
-//         const expected = [1, 2, 3, 4];
-//         const actual = numArrayCopy.push(4);
+describe('copyAndPush', () => {
+    it('makes copy of array and adds 4 to the end', () => {
+        const numArray = [1, 2, 3];
+        const numArrayCopy = numArray;
+        const expected = [1, 2, 3, 4];
+        const actual = numPush(numArrayCopy, 4);
 
-//         expect(actual).toEqual(expected);
-//     })
-// })
+        expect(actual).toEqual(expected);
+    })
+})
 
 });
