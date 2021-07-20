@@ -14,5 +14,15 @@ describe('getName', () => {
     
     });
 
+describe('getName', () => {
+    it('takes in an object with mutiple values and returns the name value', () => {
+        const character = {_id: '5cf5679a915ecad153ab68c9', name: 'Aang' };
+        const expected = 'Aang';
+        const actual = getName(character);
+
+        expect(actual).toEqual(expected);
+    })
+})
+
 
 });
