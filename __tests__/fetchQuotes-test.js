@@ -1,0 +1,14 @@
+//Test for fetching Futurama Quotes
+
+//Import Functions
+//import fetch from 'node-fetch';
+import getFuturamaQuotes from '../functions/fetchQuotes.js';
+import mungedFuturamaQuotes from '../functions/fetchQuotes.js';
+
+describe('fetchQuotes', () => {
+    it('fetches quotes from a futurama API and presents specific values', async () => {
+        const quotes = await mungedFuturamaQuotes();
+        
+        expect(quotes).toEqual({ character:expect.any(String), quote:expect.any(String), image:expect.any(String)});
+    })
+})
