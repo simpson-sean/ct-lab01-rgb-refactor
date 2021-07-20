@@ -1,7 +1,7 @@
 // Create a function that returns the 'name' property of an object
-function getName(booger) {
+function getName({ name }) {
     //Returns NAME value of an object 
-    return booger['name'];
+    return name;
 };
 
 export default getName;
