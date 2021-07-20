@@ -15,10 +15,10 @@ describe('copyAndPush', () => {
 
 describe('copyAndPush', () => {
     it('makes copy of array and adds 4 to the end', () => {
-        const numArray = [1, 2, 3];
-        const numArrayCopy = numArray;
-        const expected = [1, 2, 3, 4];
-        const actual = numPush(numArrayCopy, 4);
+        const numArray = [1, 2, 3];    
+        const numArrayCopy = numArray; //creates copy of original array
+        const expected = [1, 2, 3, 4]; 
+        const actual = numPush(numArrayCopy, 4); //push 4 to copy of original array
 
         expect(actual).toEqual(expected);
     })
